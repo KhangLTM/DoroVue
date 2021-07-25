@@ -66,7 +66,6 @@ export default {
 
         setAdjustment(adjustment){
             this.toggleAdjustment()
-            this.toggleIsPlaying()
             this.$emit("setAdjustment", adjustment)
 
         }
