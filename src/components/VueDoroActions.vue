@@ -1,19 +1,19 @@
 <template>
   
 <div class="button">
-    <button class="button__action">
-        <sliders-icon @click="toggleAdjustment()">adjustment</sliders-icon>
+    <button class="button__action"  @click="toggleAdjustment()">
+        <sliders-icon>adjustment</sliders-icon>
     </button>
 
-    <button class="button__toggle">
+    <button class="button__toggle" @click="toggleIsPlaying()">
         <transition-group name="toggle-buttons">
-            <play-icon v-if="!isPlaying" @click="toggleIsPlaying()" key="play" >PLAY</play-icon>
-            <pause-icon v-else @click="toggleIsPlaying()" key="pause"  >STOP</pause-icon>
+            <play-icon v-if="!isPlaying" " key="play" >PLAY</play-icon>
+            <pause-icon v-else key="pause" >STOP</pause-icon>
         </transition-group>
     </button>
 
-    <button class="button__action">
-        <skip-forward-icon @click="nextStep()">NEXT</skip-forward-icon>
+    <button class="button__action"  @click="nextStep()">
+        <skip-forward-icon >NEXT</skip-forward-icon>
     </button>
 
         <vue-doro-adjustment
