@@ -93,6 +93,7 @@ export default {
     display flex
     justify-content space-between    
     width 100%
+    cursor pointer
 .button__action
     background-color transparent
     border-radius 100%
