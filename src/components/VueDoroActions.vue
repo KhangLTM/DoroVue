@@ -93,7 +93,6 @@ export default {
     display flex
     justify-content space-between    
     width 100%
-    cursor pointer
 .button__action
     background-color transparent
     border-radius 100%
@@ -101,6 +100,7 @@ export default {
     height @width 
     transition background-color linear 
     padding 1.1rem 1rem 1rem 1rem
+    cursor pointer
     hoverTransition()
     @media screen and (max-width 820px)
         margin-top 4rem
