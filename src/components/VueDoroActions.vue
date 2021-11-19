@@ -7,7 +7,7 @@
 
     <button class="button__toggle" @click="toggleIsPlaying()">
         <transition-group name="toggle-buttons">
-            <play-icon v-if="!isPlaying" " key="play" >PLAY</play-icon>
+            <play-icon v-if="!isPlaying"  key="play" >PLAY</play-icon>
             <pause-icon v-else key="pause" >STOP</pause-icon>
         </transition-group>
     </button>
